@@ -1,0 +1,70 @@
+@use '../common/colors';
+@use '../common/sizing';
+
+@media (max-width: sizing.$desktop) 
+{
+  .logo-links {
+    display:none;
+  }
+}
+
+.logo-links {
+  margin-top: auto;
+  margin-bottom:auto;
+  padding-right:1rem;
+
+
+  a {
+    text-decoration: none;
+    color:black;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smooth: always;
+  }
+
+  .tamu-top-link {
+    font-size: 0.7rem;
+  }
+  .tamu-engr-link {
+    font-size:0.9rem;
+  }
+}
+
+.tamu-logo {
+
+    background-color: colors.$white;
+    width:auto;
+    height:100% !important;
+    max-height:60px;
+    overflow: hidden;
+    
+    
+
+    .st0 {
+        fill: #500000;
+      }
+      .st1 {
+        fill: #ffffff;
+      }
+      .st2 {
+        fill: #b1b3b6;
+      }
+      /*-- You will have to declare open sans after you save from illustrator or it will use system fonts --*/
+      .st3,
+      .st6 {
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial,
+          sans-serif;
+      }
+      .st7 {
+        font-size: 36.7844px;
+      }
+      .st8 {
+        letter-spacing: 3px;
+        font-weight: 700;
+      }
+      .st10 {
+        font-size: 73.5687px;
+        letter-spacing: 1px;
+        font-weight: 400;
+      }
+}

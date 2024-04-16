@@ -1,0 +1,19 @@
+@use 'colors';
+@use 'sizing';
+@use 'svg';
+@use 'typography';
+@use 'layout';
+
+a:link {
+    color: colors.$link;
+}
+
+a:hover {
+    color: colors.$linkHover;
+}
+
+html {
+    font-family: 'open-sans';
+    color: colors.$gray-100;
+    background-color: colors.$gray-600;
+  }

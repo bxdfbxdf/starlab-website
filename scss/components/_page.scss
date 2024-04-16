@@ -1,0 +1,103 @@
+@use '../common/sizing';
+@use '../common/colors';
+
+.page
+{
+    background-color: transparent;
+    // margin: calc(3* sizing.$spaceUnit);
+    // max-width:800px;
+    // margin-left:auto;
+    // margin-right:auto;
+    padding-bottom:calc(4 * sizing.$spaceUnit);
+
+    h1, h2, h3, h4, h5, p, ul {
+        max-width:800px;
+        margin-left:auto;
+        margin-right:auto;
+        padding:sizing.$spaceUnit;
+    }
+
+    a {
+        font-size: 1rem;
+        color: colors.$white;
+        text-decoration: none;
+        border-bottom: 1px dotted;
+        &:hover {
+          color: #939393;
+          text-decoration: none;
+          border-bottom: 1px solid;
+        }
+      }
+      
+    h1 {
+        font-family: "Oswald", Arial, sans-serif;
+        font-weight: 400;
+        color: colors.$white;
+        font-size: 2.75rem;
+        text-transform: uppercase;
+    }
+
+
+    body {
+    min-height: 450px;
+    height: 100vh;
+    margin: 0;  
+    background: radial-gradient(ellipse farthest-corner at center top, #f39264 0%, #f2606f 100%);
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;  
+    }
+
+
+
+    ul {
+        list-style-type: none;
+        padding-left:0;
+        margin-block-start: 0;
+        padding-block-start:0;
+        max-width: 50%;
+        li {
+            position: relative;
+            z-index: 1;
+            font-size: 14px;
+            padding: 18px 10px 18px 50px;
+            backface-visibility: hidden;
+            transform: translateZ(0) scale(1.0, 1.0);
+            box-shadow: 0 2px 0 rgba(0, 0, 0, .08);
+
+            &:before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 40%;
+                    width: 1em;
+                    height: 1em;
+                    background-repeat: no-repeat;
+                    background-image: url("data:image/svg+xml;utf8,<?xml version='1.0' encoding='utf-8'?><svg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='check-circle' class='svg-inline--fa fa-check-circle fa-w-16' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path fill='white' d='M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z'></path></svg>");
+            }
+
+            small {
+                position: relative;
+                z-index: 2;
+                display: block;
+                text-align: right;
+            }
+
+        }
+
+    }
+
+
+
+      
+
+    strong { color: #292929; }
+
+
+    * > * > img {
+        max-height: 700px;
+        width: auto;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+

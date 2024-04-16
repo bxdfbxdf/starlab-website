@@ -1,0 +1,35 @@
+$phone: 640px; 
+$tablet: 768px; 
+$desktop: 1024px;
+
+$spaceUnit: 1rem;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.padding-container {
+  padding: $spaceUnit;
+}
+
+.column-padded {
+   & *:not(:last-child) {
+    padding-bottom: $spaceUnit;
+  }
+
+  & * {
+    display:block;
+    max-width: calc(100vw - 2.5 * $spaceUnit);
+    margin: 0 auto;
+  }
+
+  & p {
+    max-width: 500px;
+  }
+}

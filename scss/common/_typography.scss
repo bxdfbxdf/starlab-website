@@ -1,0 +1,19 @@
+@use '../common/sizing';
+
+
+
+@font-face {
+    font-family: 'open-sans';
+    src: url('/fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'crimson-text';
+    src: url('/fonts/CrimsonPro-VariableFont_wght.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'oswald';
+    src: url('/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+    
+  }
