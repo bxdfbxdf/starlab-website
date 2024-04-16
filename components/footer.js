@@ -20,7 +20,7 @@ const Footer = ({props}) => {
               <div className='footer-vertical-column'>
 
               <a href='https://tees.tamu.edu/' alt="Texas Engineering Experiment Station">
-                <img src='/icons/TEES-white.webp' alt='TEES logo'/>
+                <img src='/images/TEES-white.webp' alt='TEES logo'/>
               </a>
 
                 <a href='https://rellis.tamus.edu/'>RELLIS at Texas A&M</a>
