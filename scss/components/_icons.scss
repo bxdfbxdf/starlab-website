@@ -1,12 +1,12 @@
 @use '../common/colors';
 @use '../common/sizing';
 
-@media (max-width: sizing.$desktop) 
-{
-  .logo-links {
-    display:none;
-  }
-}
+// @media (max-width: sizing.$desktop) 
+// {
+//   .logo-links {
+//     display:none;
+//   }
+// }
 
 .logo-links {
   margin-top: auto;

@@ -559,11 +559,6 @@ button {
   transition: background-position 0.5s ease, color 0.5s ease;
 }
 
-@media (max-width: 1024px) {
-  .logo-links {
-    display: none;
-  }
-}
 .logo-links {
   margin-top: auto;
   margin-bottom: auto;
