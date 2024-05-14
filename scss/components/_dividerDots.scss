@@ -1,0 +1,14 @@
+.divider-dots {
+    --svg: url(../public/images/dot.svg);
+    height: 32px;
+    -webkit-mask-size: 8px;
+    mask-size: 8px;
+    display: block;
+    width: 100%;
+    background: #707070;
+    -webkit-mask-image: var(--svg);
+    -webkit-mask-repeat: repeat space;
+    mask-image: var(--svg);
+    mask-repeat: repeat space;
+    box-sizing: border-box;
+}

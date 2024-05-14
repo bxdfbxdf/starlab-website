@@ -29,15 +29,5 @@ export function getPageContent(slug) {
     const content = fs.readFileSync(file, 'utf8')
     const jsx = matter(content)
 
-    // return matterResult
-
-    // const jsx = compiler(
-    //     jsx,
-    //     {
-    //         img: Pic, //must pass props: title, alt, src
-
-    //     }
-    // )
-    console.log(jsx)
     return jsx
 }

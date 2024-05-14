@@ -4,6 +4,7 @@ import {getPageMetadata, getPageContent} from '@/utils/pageData'
 // import fs from 'fs'
 import Pic from '@/components/pic'
 import HorizontalFeature from '@/components/horizontalfeature'
+import YoutubeGallery from '@/components/YoutubeGallery'
 
 
 
@@ -16,7 +17,7 @@ export const generateStaticParams = async () => {
 export const generateMetadata = async ({params, searchParams}) => {
     const id = params?.slug ? ' - ' + params?.slug: ''
     return {
-        title: `Rellis Starlab ${id.replaceAll('_', '')}`
+        title: `Rellis Starlab ${id.replace(/[0-9_]/g, ' ')}`
     }
 }
 
@@ -41,6 +42,9 @@ const Page = (props) => {
                             },
                             feature: {
                                 component: HorizontalFeature
+                            },
+                            youtubeGallery: {
+                                component: YoutubeGallery
                             }
 
                         }

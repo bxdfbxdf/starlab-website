@@ -1,3 +1,10 @@
+//digital twins
+//comment out selfdriving
+//contact
+//mission and vision
+//motion capture page:: strictly abt stage and pricing (external price, "contact for internal price")
+
+
 import "../scss/App.css"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
