@@ -1,7 +1,7 @@
 const YoutubeEmbed = ({ embedId, width }) => {
   
   (
-    <div className={`video-responsive ${width ? 'narrow' : ''}`}>
+    <div className='video-responsive'>
       <iframe
         width="853"
         height="480"
