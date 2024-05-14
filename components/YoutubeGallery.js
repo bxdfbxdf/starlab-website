@@ -3,10 +3,7 @@ import YoutubeEmbed from "./youtube"
 const defaultEmbedIds = [
     'PxJCdwmvIAE',
     'BYNkpd3ukdk',
-    'BYNkpd3ukdk',
-    'BYNkpd3ukdk',
-    'BYNkpd3ukdk',
-    'BYNkpd3ukdk'
+    'DZlbEXjo2Sc'
 ]
 
 const YoutubeGallery = (props) => {

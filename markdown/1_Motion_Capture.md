@@ -1,6 +1,10 @@
 # Unlock the Future of Motion Capture with Starlab
 
-The Starlab is open for client work. We have a rate of 2400 per day, and 5 dollars per character second of processed capture data. For internal rates, please contact us. 
+The Starlab is open for client work. 
+We have a rate of 
+* $2400 per day
+* $5 dollars per character second of processed capture data. 
+* For internal rates, please contact us. 
 
 
 Welcome to the forefront of motion capture technology at Starlab. Dive into a realm where movement meets precision, where every gesture, every sway, and every leap is meticulously captured and transformed into digital brilliance. Step into our state-of-the-art facility boasting the cutting-edge VICON and Optitrack systems, setting the gold standard in motion capture technology.
@@ -12,6 +16,8 @@ Experience unparalleled precision with our VICON system, featuring a staggering 
 # Optitrack: Limitless Possibilities
 
 Enter a world of limitless possibilities with our Optitrack system, comprising 16 meticulously calibrated cameras that work seamlessly to capture even the most dynamic movements with unrivaled fidelity. From rapid action sequences to intricate choreography, our Optitrack system empowers creators to push the boundaries of what's possible, delivering results that ignite the imagination.
+
+<YoutubeEmbed embedId="8FdHmTMYNz4" />
 
 # Capture Space: Where Creativity Knows No Bounds
 

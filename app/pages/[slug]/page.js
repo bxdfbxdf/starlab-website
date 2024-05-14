@@ -5,6 +5,7 @@ import {getPageMetadata, getPageContent} from '@/utils/pageData'
 import Pic from '@/components/pic'
 import HorizontalFeature from '@/components/horizontalfeature'
 import YoutubeGallery from '@/components/YoutubeGallery'
+import YoutubeEmbed from '@/components/youtube'
 
 
 
@@ -45,6 +46,9 @@ const Page = (props) => {
                             },
                             youtubeGallery: {
                                 component: YoutubeGallery
+                            },
+                            YoutubeEmbed: {
+                                component: YoutubeEmbed
                             }
 
                         }

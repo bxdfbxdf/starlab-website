@@ -635,6 +635,10 @@ button {
   position: absolute;
 }
 
+.video-responsive.narrow {
+  max-width: 800px;
+}
+
 .page {
   background-color: transparent;
   padding-bottom: 4rem;

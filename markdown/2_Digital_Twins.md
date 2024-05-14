@@ -1,9 +1,27 @@
 # Digital Twins
-Unlocking the potential of tomorrow, our lab pioneers the art of creating Digital Twins, revolutionizing industries and reshaping the future. What exactly is a Digital Twin, you ask? It's the virtual counterpart of a physical object, system, or process, meticulously crafted to mirror its real-world counterpart in every detail, providing invaluable insights and opportunities for optimization.
+Starlab pioneers the art of creating Digital Twins, revolutionizing industries across virtually all disciplines by enabling Augmented Reality simulation, testing, and monitoring of real-world spaces and processes.
 
-At our lab, we don't just produce Digital Twins – we perfect them. Utilizing cutting-edge technologies such as advanced sensors, machine learning algorithms, and immersive visualization techniques, we breathe life into these digital doppelgangers with unprecedented accuracy and fidelity. Whether it's a complex manufacturing plant, a sprawling urban infrastructure, or a state-of-the-art medical device, our Digital Twins stand as paragons of precision, offering a holistic view of their physical counterparts in real-time.
+![Rendering of a real-world space](/public/images/DigitalDoubles07.PNG)
+
+We have a detailed process for collecting high resolution data on-site with LiDAR and UAV scans. Whether it's a complex manufacturing plant, a sprawling urban infrastructure, or a state-of-the-art medical device, our Digital Twins stand as paragons of precision, offering a holistic view of their physical counterparts in real-time.
+
+![A pointcloud of a forest](/public/images/DigitalDoubles01.PNG)
+
+Once we have gathered environmental data, we process and clean the 3d geometry to produce effecient and clean models that can be deployed to all platforms.
+
+![Rendering Scans](/public/images/DigitalDoubles04.PNG)
+
+![An entire site as a pointcloud](/public/images/DigitalDoubles03.PNG)
+
+We can reduce vertex count from hundreds of millions of points, to a few hundred while preserving detail and geometric accuracy.
+
+![Retopology of 3d Scans](/public/images/DigitalDoubles02.PNG)
+
+![High Quality Rendering](/public/images/DigitalDoubles05.PNG)
 
 But what sets our lab apart is not just our technological prowess; it's our unwavering commitment to excellence. We understand that creating a Digital Twin isn't just about capturing data – it's about capturing the essence of the system it represents. That's why we work hand in hand with our clients, delving deep into the intricacies of their operations, to ensure that every nuance, every quirk, is faithfully reproduced in the digital realm.
+
+![High Quality Rendering](/public/images/DigitalDoubles06.PNG)
 
 The result? A transformative tool that empowers organizations to predict, simulate, and optimize their operations like never before. From predictive maintenance and scenario analysis to virtual testing and performance optimization, our Digital Twins empower decision-makers to chart a course towards efficiency, resilience, and innovation.
 
