@@ -3,32 +3,39 @@
 
 .horizontal-feature {
 
-    background-color: colors.$maroon;
+    background-color: transparent;//colors.$maroon;
     position: relative;
     display: block;
     // width:100vw;
     margin-top:calc(4 *sizing.$spaceUnit);
     margin-bottom:calc(4 * sizing.$spaceUnit);
+    height:500px;
     
     // transform: translate(-sizing.$spaceUnit);
 
     
     .text-container {
+        background-color: colors.$maroon;
+        position:relative;
+        top:calc(2*sizing.$spaceUnit);
         max-width: 1400px;
-        margin: 0 auto;
-        width: 100%;
+        max-width:400px;
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
         align-items: center;
-        padding: 3rem 1.5rem;
+        margin: calc(5 * sizing.$spaceUnit);
+        padding: calc(2* sizing.$spaceUnit);
         gap: 1.5rem;
+        box-shadow: 10px 10px 0 colors.$white;
 
         .text {
-            width: 55%;
+            width: 100%;
         }
     }
 
     .image-container{
+        z-index: -1;
+
         display: flex;
         position: absolute;
         justify-content: center;
@@ -36,7 +43,7 @@
         height: 100%;
         right: 0;
         top:0;
-        width: 45%;
+        width: 75%;
         clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0 100%);
 
         img {
@@ -53,15 +60,19 @@
     }
 }
 
-@media (max-width: sizing.$desktop) {
+@media (max-width: sizing.$tablet) {
     .horizontal-feature {
         flex-direction: column;
+        height:auto;
+
         p, h1, h2, h3, h4 {
             max-width:unset;
             padding:unset;
         }
         .text-container {
             max-width: 1400px;
+            box-shadow: none;
+            top:0;
             margin: 0 auto;
             width: 100%;
             display: flex;
@@ -75,7 +86,9 @@
             order: 1;
             clip-path: none;
             width: 100%;
-            aspect-ratio: 2.5 / 1;
+            max-height:450px;
+            overflow: hidden;
+            // aspect-ratio: 2.5 / 1;
         }
     }
 }

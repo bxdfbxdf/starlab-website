@@ -9,11 +9,20 @@ We have a detailed process for collecting high resolution data on-site with LiDA
 
 Once we have gathered environmental data, we process and clean the 3d geometry to produce effecient and clean models that can be deployed to all platforms.
 
-![Rendering Scans](/public/images/DigitalDoubles04.PNG)
+![An entire site as a pointcloud](/public/images/DigitalDoubles04.PNG)
 
-![An entire site as a pointcloud](/public/images/DigitalDoubles03.PNG)
 
-We can reduce vertex count from hundreds of millions of points, to a few hundred while preserving detail and geometric accuracy.
+
+
+<feature>
+    ![Effecient Topology](/public/images/DigitalDoubles03.PNG)
+    <div className='text-container'>
+        <div className='text'>
+            <h2>Efficient Topology</h2>
+            We can reduce vertex count from hundreds of millions of points, to a few hundred while preserving detail and geometric accuracy.
+        </div>
+    </div>
+</feature>
 
 <!-- ![Retopology of 3d Scans](/public/images/DigitalDoubles02.PNG) -->
 

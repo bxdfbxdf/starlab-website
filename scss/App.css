@@ -252,6 +252,19 @@ body {
   font-family: "oswald";
   src: url("/fonts/Oswald-VariableFont_wght.ttf") format("truetype");
 }
+h1, h2, h3, h4, h5, h6 {
+  font-style: italic;
+  font-weight: 800;
+}
+
+h2::before {
+  content: "";
+  border-bottom: 7px solid white;
+  display: block;
+  width: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .align-left {
   left: 0;
   align-self: flex-start;
@@ -731,26 +744,31 @@ button {
 }
 
 .horizontal-feature {
-  background-color: rgb(80, 0, 0);
+  background-color: transparent;
   position: relative;
   display: block;
   margin-top: 4rem;
   margin-bottom: 4rem;
+  height: 500px;
 }
 .horizontal-feature .text-container {
+  background-color: rgb(80, 0, 0);
+  position: relative;
+  top: 2rem;
   max-width: 1400px;
-  margin: 0 auto;
-  width: 100%;
+  max-width: 400px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 3rem 1.5rem;
+  margin: 5rem;
+  padding: 2rem;
   gap: 1.5rem;
+  box-shadow: 10px 10px 0 white;
 }
 .horizontal-feature .text-container .text {
-  width: 55%;
+  width: 100%;
 }
 .horizontal-feature .image-container {
+  z-index: -1;
   display: flex;
   position: absolute;
   justify-content: center;
@@ -758,7 +776,7 @@ button {
   height: 100%;
   right: 0;
   top: 0;
-  width: 45%;
+  width: 75%;
   clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0 100%);
 }
 .horizontal-feature .image-container img {
@@ -773,9 +791,10 @@ button {
   overflow: hidden;
 }
 
-@media (max-width: 1424px) {
+@media (max-width: 768px) {
   .horizontal-feature {
     flex-direction: column;
+    height: auto;
   }
   .horizontal-feature p, .horizontal-feature h1, .horizontal-feature h2, .horizontal-feature h3, .horizontal-feature h4 {
     max-width: unset;
@@ -783,6 +802,8 @@ button {
   }
   .horizontal-feature .text-container {
     max-width: 1400px;
+    box-shadow: none;
+    top: 0;
     margin: 0 auto;
     width: 100%;
     display: flex;
@@ -796,7 +817,8 @@ button {
     order: 1;
     clip-path: none;
     width: 100%;
-    aspect-ratio: 2.5/1;
+    max-height: 450px;
+    overflow: hidden;
   }
 }
 .about {

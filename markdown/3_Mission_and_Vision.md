@@ -20,13 +20,13 @@ The RELLIS Starlab Facility exists to benefit society through the motivation and
 
 
 <feature>
+    ![Self Driving in Downtown Bryan](/public/images/Vehicles-5.jpg)
     <div className='text-container'>
         <div className='text'>
             <h2>What We Do</h2>
             The RELLIS Starlab Facility services its users’ educational, research and professional needs as well as promotes an appreciation for and support of the self driving and motion capture industry. Research themes include Controls; Virtual Reality/Augmented Reality applications; Multi-Modal Sensing and Fusion; Communications – Vehicle to Vehicle (V2V) and Vehicle to Infrastructure (V2I).
         </div>
     </div>
-    ![Self Driving in Downtown Bryan](/public/images/Vehicles-5.jpg)
 </feature>
 
 

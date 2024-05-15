@@ -1,19 +1,34 @@
 @use '../common/sizing';
-
+@use '../common/colors';
 
 
 @font-face {
-    font-family: 'open-sans';
-    src: url('/fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
-  }
+  font-family: 'open-sans';
+  src: url('/fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'crimson-text';
+  src: url('/fonts/CrimsonPro-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'oswald';
+  src: url('/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
   
-  @font-face {
-    font-family: 'crimson-text';
-    src: url('/fonts/CrimsonPro-VariableFont_wght.ttf') format('truetype');
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-style: italic;
+  font-weight: 800;
+}
+
+h2 {
+  &::before {
+    content: "";
+    border-bottom: 7px solid colors.$white;
+    display: block;
+    width: 2.5rem;
+    margin-bottom: 0.5rem;
   }
-  
-  @font-face {
-    font-family: 'oswald';
-    src: url('/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
-    
-  }
+}
