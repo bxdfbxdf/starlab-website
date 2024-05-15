@@ -20,10 +20,13 @@ const Footer = ({props}) => {
               <div className='footer-vertical-column'>
 
 
-              <a href='https://pvfa.tamu.edu/staff/michael-walsh/' alt="Michael Walsh Profile">Director Michael Walsh</a>
-              <a href='https://engineering.tamu.edu/mechanical/profiles/hubbard-james.html' alt='Dr James Hubbard Profile'>Dr James Hubbard</a>
-              <a href='https://engineering.tamu.edu/mechanical/profiles/saripalli.html' alt='Srikanth Saripalli Profile'>Dr Srikanth Saripalli</a>
-              <a href='https://engineering.tamu.edu/mechanical/profiles/hasnain-zohaib.html' alt='Zohaib Hasnain Profile'>Dr Zohaib Hasnain</a>
+              <a href='https://pvfa.tamu.edu/staff/michael-walsh/' alt="Michael Walsh Profile">Director <br/> Michael Walsh</a>
+              <div>Dr James Hubbard</div>
+              <div>Srikanth Sripalli</div>
+              <div>Zohaib Hasnain</div>
+              {/* <a href='https://engineering.tamu.edu/mechanical/profiles/hubbard-james.html' alt='Dr James Hubbard Profile'>Dr James Hubbard</a> */}
+              {/* <a href='https://engineering.tamu.edu/mechanical/profiles/saripalli.html' alt='Srikanth Saripalli Profile'>Dr Srikanth Saripalli</a> */}
+              {/* <a href='https://engineering.tamu.edu/mechanical/profiles/hasnain-zohaib.html' alt='Zohaib Hasnain Profile'>Dr Zohaib Hasnain</a> */}
               <a href='https://rellis.tamus.edu/'>RELLIS at Texas A&M</a>
               <a href='https://tees.tamu.edu/' alt="Texas Engineering Experiment Station">
                 <img src='/images/TEES-white.webp' alt='TEES logo'/>
