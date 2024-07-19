@@ -12,7 +12,15 @@ import YoutubeEmbed from '@/components/youtube'
 
 export const generateStaticParams = async () => {
     const pages = getPageMetadata('markdown')
-    return pages.map((page) => ({slug: page.slug}))
+
+    console.log("pages array::")
+    let newarray = pages.map((page) => ({
+        slug: page.slug,
+        indexedName: page.indexedName,
+        weirdThing: "yo"
+    }))
+    console.log(newarray)
+    return newarray
 }
 
 export const generateMetadata = async ({params, searchParams}) => {
@@ -25,8 +33,11 @@ export const generateMetadata = async ({params, searchParams}) => {
 
 const Page = (props) => {
 
-    const slug = props.params.slug
-    const post = getPageContent(slug)
+    console.log('the props-----------------------------------------')
+    console.log(props)
+    const TheFile = props.params.indexedName
+    console.log(TheFile)
+    const post = getPageContent(TheFile)
 
     return (
         <main>

@@ -9,10 +9,17 @@ export function getPageMetadata(basePath) {
     const markdowns = files.filter(file=> file.endsWith('.md'))
 
     const pages = markdowns.map((filename) => {
+        const originalFilename = filename
         const fileContents = fs.readFileSync(`${basePath}/${filename}`, 'utf8')
         const matterResult = matter(fileContents)
+        const rmvIndexRegex = /\d+_/gm
+        const noIndex = filename.replace(rmvIndexRegex, '')
+        const replacedWithDashes = noIndex.replace('_','-')
+        const sanitizedFileName = replacedWithDashes.replace('.md', '')
+
         return {
-            slug: filename.replace('.md', '')
+            slug: sanitizedFileName,
+            indexedName: originalFilename
             // other metadata can be returned from matterResult.data.<data name>
         }
     })
@@ -21,9 +28,11 @@ export function getPageMetadata(basePath) {
 
 }
 
-export function getPageContent(slug) {
+export function getPageContent(FileName) {
     const folder = 'markdown/'
-    const file = folder + `${slug}.md`
+    console.log('in pageData utils, looking for::::::')
+    const file = folder + FileName
+    console.log(file)
 
 
     const content = fs.readFileSync(file, 'utf8')

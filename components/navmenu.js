@@ -14,7 +14,7 @@ const NavMenu = (props) => {
     const pageNames = pages.map(page => {
         return {
             link: page.slug,
-            text: page.slug.replace(/[0-9_]/g, ' ')
+            text: page.slug.replace(/_/g, ' ')
         }
     })
 

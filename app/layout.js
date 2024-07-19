@@ -15,11 +15,13 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
+  console.log("in root layout////////////////")
   return (
     <html>
       <body>
       <Header/>
-      {children} 
+      {children}
       <Footer/>
       </body>
     </html>
