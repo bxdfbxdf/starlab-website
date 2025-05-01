@@ -8,6 +8,7 @@
 import "../scss/App.css"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
+import { SWRProvider } from '@/components/SWRProvider'
 
 export const metadata = {
   title: "Rellis Starlab",
@@ -16,11 +17,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html>
+    <html lang='en'>
       <body>
-      <Header/>
-      {children} 
-      <Footer/>
+        <SWRProvider>
+          <Header/>
+          {children} 
+          <Footer/>
+        </SWRProvider>
       </body>
     </html>
   )
