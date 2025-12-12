@@ -12,6 +12,7 @@ import YoutubeEmbed from '@/components/youtube'
 
 export const generateStaticParams = async () => {
     const pages = getPageMetadata('markdown')
+
     return pages.map((page) => ({slug: page.slug}))
 }
 
