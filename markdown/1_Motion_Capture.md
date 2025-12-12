@@ -2,11 +2,6 @@
 
 ## The Starlab is open for client work. 
  
-* $2400 per day
-* $5 dollars per character second of processed capture data. 
-* For internal rates, please email *<mailto:mwalsh@tamu.edu>*. 
-
-
 Welcome to the forefront of motion capture technology at Starlab. Dive into a realm where movement meets precision, where every gesture, every sway, and every leap is meticulously captured and transformed into digital brilliance. Step into our state-of-the-art facility boasting the cutting-edge VICON and Optitrack systems, setting the gold standard in motion capture technology.
 
 ## VICON: Precision Redefined
